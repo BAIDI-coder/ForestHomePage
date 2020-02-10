@@ -8,3 +8,61 @@
 ::-webkit-scrollbar-corner {
     background-color: rgba(0, 0, 0, 0);
 }
+
+#logo {
+    background:transparent url(../image/logo_spring.png) no-repeat center center;
+    background-color: white;
+    background-size: 110px;
+    display: inline-block;
+    height: 110px;
+    width: 110px;
+}
+#markword_wrapper {
+    display: inline-block;
+    position: relative;
+    width: 290px;
+    height: 110px;
+    overflow: hidden;
+    left: -10px;
+    bottom: -20px;
+}
+#markword_and_repo {
+    width: 600px;
+    cursor: pointer;
+    transition: ease-in-out 1s;
+}
+#markword_and_repo:hover {
+    transform: translateX(-290px);
+}
+#markword {
+    background: linear-gradient(to right, green 60%, yellowgreen 40%);
+    background-clip: content-box;
+    float: left;
+    height: 110px;
+    font-size: 80px;
+    font-weight: bold;
+    font-family: Verdana;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    cursor: pointer;
+    padding-left: 0px;
+}
+#repo {
+    background: linear-gradient(to right, rgb(214, 134, 13) 50%, rgb(142, 151, 18) 50%);
+    background-clip: content-box;
+    float: left;
+    height: 110px;
+    font-size: 80px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    cursor: pointer;
+    padding-left: 10px;
+}
+body{
+    background:none;
+    background-size: 100%;
+}
