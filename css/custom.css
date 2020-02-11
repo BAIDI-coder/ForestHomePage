@@ -1,6 +1,8 @@
 body{
-    background:none;
+    background: url(../image/wallpaper_log.jpg);
+    background-color: white;
     background-size: 100%;
+    cursor: url("../image/arrow.png") auto;
 }
 ::-webkit-scrollbar-track {
     /*滚动条里面轨道*/
@@ -14,12 +16,13 @@ body{
 }
 
 #logo {
-    background:transparent url(../image/logo_spring.png) no-repeat center center;
-    background-color: white;
+    background:url(../image/logo_summer.png) no-repeat center center;
     background-size: 110px;
     display: inline-block;
     height: 110px;
     width: 110px;
+    border-radius: 60px 15px;
+    margin-right: 10px;
 }
 #markword_wrapper {
     display: inline-block;
@@ -79,31 +82,70 @@ body{
     background-color: transparent;
 }
 #search_engine {
+    border-top: 0px;
+    border-right: 0px;
+    border-left: brown 5px;
+    border-bottom: 0px;
     width: 50px;
     height: 50px;
     float: left;
-    border: 0px;
+    background: url(../image/baidu.png) center center;
     background-color: rgb(80, 136, 25);
+    background-size: 50px 50px;
+    cursor: pointer;
     border-radius: 30px 0px 0px 30px;
 }
 #btn {
-    border: 0px;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: brown 5px;
+    border-bottom: 0px;
     float: left;
-    background-color: blanchedalmond;
+    background: url(../image/arrow_2.png) center center;
+    background-size: 50px 50px;
+    background-color: whitesmoke;
     height: 50px;
     width: 50px;
+    cursor: pointer;
     border-radius: 0px 30px 30px 0px;
 }
 #text {
-    border: 0px;
+    outline-style: none;
+    border-top: 2px saddlebrown;
+    border-bottom: 2px saddlebrown;
+    border-left: 0px;
+    border-right: 0px;
+    caret-color: rgb(80, 136, 25);
     text-align: center;
     color: rgb(102, 81, 36);
     font-size: 16px;
     font-family: "Microsof JhengHei", monospace;
     padding: 5px;
     overflow: hidden;
-    background-color: burlywood;
+    background-color: rgb(231, 229, 225);
     height: 50px;
     width: 580px;
     float: left;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+#text:focus {
+    cursor: auto;
+    transform: scale(1);
+    box-shadow: inset 0px 0px 1.5px 2px #5abd00;
+}
+#text:hover {
+    cursor: auto;
+    animation: switch 0.4s ease-in-out 2; 
+}
+@keyframes switch {
+    0% {
+        width: 580px;
+    }
+    50% {
+        width: 550px;
+    }
+    100% {
+        width: 580px;
+    }
 }
