@@ -2,7 +2,6 @@ body{
     background: url(../image/wallpaper_log.jpg);
     background-color: white;
     background-size: 100%;
-    cursor: url("../image/arrow.png") auto;
 }
 ::-webkit-scrollbar-track {
     /*滚动条里面轨道*/
@@ -10,7 +9,6 @@ body{
     background   : #ededed;
     border-radius: 10px;
 }
-
 ::-webkit-scrollbar-corner {
     background-color: rgba(0, 0, 0, 0);
 }
