@@ -11,33 +11,34 @@
     <link type="text/css" href="css/custom.css" rel="styleSheet" />
 </head>
 
-<body style="text-align: center;">
+<body>
+    <canvas id="c" width="300" height="150" style="position: absolute;left: 0;right: 0;;z-index: -1;"></canvas>
     <noscript>
         We're so sorry but Application cannot work without Javascript enabled.
     </noscript>
-    <div id="outer_wrapper" style="margin: auto;">
-        <div id="search_section" style="margin-right: 80px;margin-left: 80px;display: block;text-align: center;">
-            <div id="logo_and_markword" style="margin: auto;display: block;margin-top: 50px;text-align: center;">
-                <div id="logo"></div>
-                <div id="markword_wrapper">
-                    <div id="markword_and_repo">
-                        <div id="markword">Forest</div>
-                        <a href="https://github.com/BAIDI-coder/ForestHomePage"
-                            style="text-decoration: none;color: none;">
-                            <div id="repo">:Repo</div>
-                        </a>
-                    </div>
+    <div style="width: 100%;height: 1px;"></div>
+    <div id="outer_wrapper">
+        <div id=" search_section" style="margin-top: 40px;">
+        <div id="logo_and_markword">
+            <div id="logo"></div>
+            <div id="markword_wrapper">
+                <div id="markword_and_repo">
+                    <div id="markword">Forest</div>
+                    <a href="https://github.com/BAIDI-coder/ForestHomePage" style="text-decoration: none;color: none;">
+                        <div id="repo">:Repo</div>
+                    </a>
                 </div>
             </div>
-            <div id="search_btn_switch">
-                    <form action="http://www.baidu.com/baidu" target="_blank">
-                        <div id="search_engine"></div>
-                        <input id="text" name="word" type="search" placeholder="进入森林探险吧！"/>
-                        <input id="btn" value="" type="submit" />
-                    </form>
-            </div>
+        </div>
+        <form id="search_btn_switch" action="http://www.baidu.com/baidu" target="_blank">
+            <div id="search_engine"></div>
+            <input id="text" name="word" type="search" autocomplete="off" placeholder="进入森林探险吧！" />
+            <input id="btn" value="" type="submit" />
+        </form>
         </div>
     </div>
+    <script src="script/quote_jquery.js"></script>
+    <script src="script/quote_dot.js"></script>
 </body>
 
 </html>
